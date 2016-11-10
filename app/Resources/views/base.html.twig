@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js?hl=fr'></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -20,13 +19,40 @@
 
 
     {% block stylesheets %}
-
+        <link rel="stylesheet" type="text/css" href="{{ asset ('css/unesco.css')}}">
 
     {% endblock %}
 
 </head>
 
 <header>
+
+    <div class="container-fluid blg">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Lyon Journey</h1>
+            </div>
+        </div>
+        <div class="container-fluid navbar">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="navbar-text navbar-left"><a href="#" class="navbar-link">Our Trip</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p class="navbar-text navbar-center"><a href="#" class="navbar-link">Special Trip</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p class="navbar-text navbar-center"><a href="#" class="navbar-link">Fidelity</a></p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
 
 </header>
 
@@ -35,7 +61,13 @@
 {% block body %}{% endblock %}
 
 <footer>
-
+    <div class="container-fluid blg">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Lyon Journey</h1>
+            </div>
+        </div>
+    </div>
 </footer>
 {% block javascripts %}
 
